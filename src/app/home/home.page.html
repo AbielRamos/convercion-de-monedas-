@@ -1,0 +1,24 @@
+<div>
+  <img alt="Silhouette of mountains" src="../../assets/icon/perro estudiando.avif"/>
+
+  <!-- Texto para solicitar la cantidad en pesos mexicanos -->
+  <ion-text>
+    <h1>¿Ingrese la cantidad en moneda mexicana?</h1>
+  </ion-text>
+
+  <!-- Entrada de texto para la cantidad -->
+  <ion-input type="number" placeholder="Ingrese la cantidad en pesos" [(ngModel)]="cantidad"></ion-input>
+
+  <!-- Botón para calcular la conversión -->
+  <ion-button (click)="calcular()" expand="block" shape="round">
+    Calcular
+  </ion-button>
+
+  <!-- Mostrar los resultados de la conversión -->
+  <ion-text>
+    <h2>Resultado en dólares: {{resultadoDolares}}</h2>
+    <h2>Resultado en euros: {{resultadoEuros}}</h2>
+  </ion-text>
+</div>
+
+
